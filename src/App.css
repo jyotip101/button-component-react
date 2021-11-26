@@ -1,38 +1,205 @@
+:root {
+  --font-famaly: Helvetica;
+  --transition: all 0.3s linear;
+  --font-color: #232323;
+  --shadow-color: #fcfcfc;
+  --bg-color: #ffff;
+  --main-color: #3d5afe;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-famaly);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  line-height: 1.5;
+  font-size: 14px;
+}
 .App {
-  text-align: center;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 350px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
+}
+li,
+header h1 {
+  list-style: none;
+  margin: 1rem;
+  color: #9e9e9e;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+}
+li:nth-child(4) {
+  color: var(--font-color);
+}
+header h1 {
+  margin: 1rem;
+  margin-left: 2rem;
+  color: var(--font-color);
+}
+header h1 span {
+  color: #f7542e;
+}
+.contanear {
+  padding: 1rem;
+}
+p {
+  font-size: 85%;
+  margin-top: 2rem;
+}
+footer a {
+  margin-top: 2rem;
+  color: #aeaeae;
+}
+@media screen and (max-width: 900px) {
+  header {
+    display: none;
+  }
+
+  .contanear {
+    width: 100vw;
+  }
+}
+.but-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.btn-contant {
+  margin-right: 2rem;
+}
+.btn {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 100%;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button style */
+/* row 1 */
+.btn-1 {
+  background-color: #e0e0e0;
+  color: #3f3f3f;
+}
+.btn-1-1:focus,
+.btn-1-1:hover {
+  background-color: #aeaeae;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* row 2 */
+.btn-2 {
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.btn-2-1:focus,
+.btn-2-1:hover {
+  background-color: #3d5afe63;
+}
+
+/* row 3 */
+.btn-3 {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+.btn-3-1:focus,
+.btn-3-1:hover {
+  background-color: #3d5afe63;
+}
+
+/* row 4 */
+.btn-4 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+/* row 5 */
+.btn-5 {
+  background-color: #e0e0e0;
+  color: #3f3f3f;
+}
+.btn-5-1 {
+  background-color: var(--bg-color);
+  color: #3f3f3f;
+}
+
+/* row 6 */
+.btn-6 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+.btn-6 span {
+  font-size: 130%;
+  margin: auto 0.05rem;
+}
+
+/* row 7 */
+.btn-7 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding: 0.25rem 0.5rem;
+}
+.btn-7-1 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+.btn-7-2 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding: 0.7rem 1.1rem;
+}
+
+/* row 8 */
+.btn-8 {
+  background-color: #e0e0e0;
+  color: #3f3f3f;
+}
+.btn-8-1 {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+.btn-8-2 {
+  background-color: #455a64;
+  color: var(--bg-color);
+}
+.btn-8-3 {
+  background-color: #d32f2f;
+  color: var(--bg-color);
+}
+
+/* row 9 */
+.btn-9 {
+  background-color: #aeaeae;
+  color: #3f3f3f;
+}
+.btn-9-1 {
+  background: #0039cb;
+  color: var(--bg-color);
+}
+.btn-9-2 {
+  background: #1c313a;
+  color: var(--bg-color);
+}
+.btn-9-3 {
+  background: #9a0007;
+  color: var(--bg-color);
 }
