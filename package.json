@@ -1,5 +1,6 @@
 {
-  "homepage": "http://jyotip101.github.io.button-component-react",
+  "homepage": "http://jyotip101.github.io/button-component-react",
+  "name": "button-component",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
